@@ -1,0 +1,2 @@
+custom_robot_description:ind_environment
+-DCATKIN_DEVEL_PREFIX=/home/ros/master_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ros/master_ws/install -G Unix Makefiles

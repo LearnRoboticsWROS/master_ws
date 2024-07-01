@@ -1,0 +1,45 @@
+<?xml version = "1.0"?>
+
+<robot name="custom_robot">
+
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0.05" length="0.04"/>
+            </geometry>
+            <origin xyz="0.0 0.0 0.02" rpy="0.0 0.0 0.0"/>
+        </visual>
+
+        <collision>
+            <geometry>
+                <cylinder radius="0.05" length="0.04"/>
+            </geometry>
+            <origin xyz="0.0 0.0 0.02" rpy="0.0 0.0 0.0"/>
+        </collision>
+    </link>
+
+    <link name="link1">
+        <visual>
+            <geometry>
+                <cylinder radius="0.035" length="0.09"/>
+            </geometry>
+            <origin xyz="0.0 0.0 0.045" rpy="0.0 0.0 0.0"/>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="0.035" length="0.09"/>
+            </geometry>
+            <origin xyz="0.0 0.0 0.045" rpy="0.0 0.0 0.0"/>
+        </collision>
+    </link>
+
+    <joint name="base_link__link1" type="revolute">
+        <parent link="base_link"/>
+        <child link="link1"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-3.14159" upper="3.14159" velocity="0.5" effort="1000.0"/>
+        <origin xyz="0 0 0.04" rpy="0 0 0"/>
+    </joint>
+    
+    
+</robot>
