@@ -7,8 +7,9 @@ Panels:
         - /Global Options1
         - /Status1
         - /RobotModel1
+        - /RobotModel1/Links1
         - /RobotModel1/Links1/base_link1
-        - /RobotModel1/Links1/link11
+        - /RobotModel1/Links1/link21
         - /TF1
       Splitter Ratio: 0.5
     Tree Height: 629
@@ -75,6 +76,31 @@ Visualization Manager:
           Show Axes: true
           Show Trail: false
           Value: true
+        link2:
+          Alpha: 0.5
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        link3:
+          Alpha: 0.5
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        link4:
+          Alpha: 0.5
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        link5:
+          Alpha: 0.5
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        link6:
+          Alpha: 0.5
+          Show Axes: false
+          Show Trail: false
+          Value: true
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
@@ -92,6 +118,16 @@ Visualization Manager:
           Value: true
         link1:
           Value: true
+        link2:
+          Value: true
+        link3:
+          Value: true
+        link4:
+          Value: true
+        link5:
+          Value: true
+        link6:
+          Value: true
       Marker Alpha: 1
       Marker Scale: 0.5
       Name: TF
@@ -101,7 +137,12 @@ Visualization Manager:
       Tree:
         base_link:
           link1:
-            {}
+            link2:
+              link3:
+                link4:
+                  link5:
+                    link6:
+                      {}
       Update Interval: 0
       Value: true
   Enabled: true
@@ -132,7 +173,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 0.9881591200828552
+      Distance: 1.852357029914856
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -140,17 +181,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 0.0049639614298939705
-        Y: 0.0036580131854861975
-        Z: -0.013086696155369282
+        X: -0.12718240916728973
+        Y: -0.06856511533260345
+        Z: 0.2920728921890259
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.385397732257843
+      Pitch: 0.8553977608680725
       Target Frame: <Fixed Frame>
-      Yaw: 0.870398223400116
+      Yaw: 6.223583221435547
     Saved: ~
 Window Geometry:
   Displays:

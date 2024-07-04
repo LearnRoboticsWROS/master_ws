@@ -8,3 +8,4 @@
 
 # modified environment variables
 export PWD='/home/ros/master_ws/build'
+export PYTHONPATH="/home/ros/master_ws/devel/lib/python3/dist-packages:$PYTHONPATH"
