@@ -71,6 +71,7 @@ all: ind_environment/all
 all: meshes_robot_description/all
 all: ur5_description/all
 all: universal_robot/ur_kinematics/all
+all: robotiq_description/all
 
 .PHONY : all
 
@@ -93,6 +94,7 @@ preinstall: ind_environment/preinstall
 preinstall: meshes_robot_description/preinstall
 preinstall: ur5_description/preinstall
 preinstall: universal_robot/ur_kinematics/preinstall
+preinstall: robotiq_description/preinstall
 
 .PHONY : preinstall
 
@@ -120,6 +122,7 @@ clean: ind_environment/clean
 clean: meshes_robot_description/clean
 clean: ur5_description/clean
 clean: universal_robot/ur_kinematics/clean
+clean: robotiq_description/clean
 
 .PHONY : clean
 
@@ -247,6 +250,24 @@ meshes_robot_description/preinstall:
 meshes_robot_description/clean:
 
 .PHONY : meshes_robot_description/clean
+
+#=============================================================================
+# Directory level rules for directory robotiq_description
+
+# Recursive "all" directory target.
+robotiq_description/all:
+
+.PHONY : robotiq_description/all
+
+# Recursive "preinstall" directory target.
+robotiq_description/preinstall:
+
+.PHONY : robotiq_description/preinstall
+
+# Recursive "clean" directory target.
+robotiq_description/clean:
+
+.PHONY : robotiq_description/clean
 
 #=============================================================================
 # Directory level rules for directory universal_robot/universal_robots
