@@ -10,7 +10,7 @@ project(custom_robot_gazebo)
 find_package(catkin REQUIRED COMPONENTS
   controller_manager
   joint_state_controller
-  joint_state_publisher
+  robot_state_publisher
   roscpp
   rospy
   std_msgs

@@ -138,7 +138,6 @@ gazebo_grasp_plugin_ros_republisher_node_EXTERNAL_OBJECTS =
 /home/ros/master_ws/devel/lib/gazebo_grasp_plugin_ros/grasp_event_republisher: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
 /home/ros/master_ws/devel/lib/gazebo_grasp_plugin_ros/grasp_event_republisher: /usr/lib/x86_64-linux-gnu/libprotobuf.so
 /home/ros/master_ws/devel/lib/gazebo_grasp_plugin_ros/grasp_event_republisher: /usr/lib/x86_64-linux-gnu/libsdformat9.so.9.8.0
-/home/ros/master_ws/devel/lib/gazebo_grasp_plugin_ros/grasp_event_republisher: /usr/lib/x86_64-linux-gnu/libOgreMain.so
 /home/ros/master_ws/devel/lib/gazebo_grasp_plugin_ros/grasp_event_republisher: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
 /home/ros/master_ws/devel/lib/gazebo_grasp_plugin_ros/grasp_event_republisher: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
 /home/ros/master_ws/devel/lib/gazebo_grasp_plugin_ros/grasp_event_republisher: /usr/lib/x86_64-linux-gnu/libOgreTerrain.so
@@ -192,6 +191,8 @@ gazebo_grasp_plugin_ros_republisher_node_EXTERNAL_OBJECTS =
 /home/ros/master_ws/devel/lib/gazebo_grasp_plugin_ros/grasp_event_republisher: /usr/lib/x86_64-linux-gnu/libprotobuf.so
 /home/ros/master_ws/devel/lib/gazebo_grasp_plugin_ros/grasp_event_republisher: /usr/lib/x86_64-linux-gnu/libignition-common3.so.3.14.2
 /home/ros/master_ws/devel/lib/gazebo_grasp_plugin_ros/grasp_event_republisher: /usr/lib/x86_64-linux-gnu/libuuid.so
+/home/ros/master_ws/devel/lib/gazebo_grasp_plugin_ros/grasp_event_republisher: /usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+/home/ros/master_ws/devel/lib/gazebo_grasp_plugin_ros/grasp_event_republisher: /usr/lib/x86_64-linux-gnu/libOgrePaging.so
 /home/ros/master_ws/devel/lib/gazebo_grasp_plugin_ros/grasp_event_republisher: /usr/lib/x86_64-linux-gnu/libSimTKsimbody.so.3.6
 /home/ros/master_ws/devel/lib/gazebo_grasp_plugin_ros/grasp_event_republisher: /usr/lib/x86_64-linux-gnu/libSimTKmath.so.3.6
 /home/ros/master_ws/devel/lib/gazebo_grasp_plugin_ros/grasp_event_republisher: /usr/lib/x86_64-linux-gnu/libSimTKcommon.so.3.6

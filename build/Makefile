@@ -4666,71 +4666,6 @@ _run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur30.xml/fast:
 .PHONY : _run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur30.xml/fast
 
 #=============================================================================
-# Target rules for targets named controller_manager_msgs_generate_messages_py
-
-# Build rule for target.
-controller_manager_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_py
-.PHONY : controller_manager_msgs_generate_messages_py
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_py/fast:
-	$(MAKE) -f custom_robot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build.make custom_robot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build
-.PHONY : controller_manager_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named controller_manager_msgs_generate_messages_nodejs
-
-# Build rule for target.
-controller_manager_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_nodejs
-.PHONY : controller_manager_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f custom_robot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build.make custom_robot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build
-.PHONY : controller_manager_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named controller_manager_msgs_generate_messages_lisp
-
-# Build rule for target.
-controller_manager_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_lisp
-.PHONY : controller_manager_msgs_generate_messages_lisp
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f custom_robot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build.make custom_robot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build
-.PHONY : controller_manager_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named controller_manager_msgs_generate_messages_eus
-
-# Build rule for target.
-controller_manager_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_eus
-.PHONY : controller_manager_msgs_generate_messages_eus
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_eus/fast:
-	$(MAKE) -f custom_robot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build.make custom_robot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build
-.PHONY : controller_manager_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named controller_manager_msgs_generate_messages_cpp
-
-# Build rule for target.
-controller_manager_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_cpp
-.PHONY : controller_manager_msgs_generate_messages_cpp
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f custom_robot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build.make custom_robot_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build
-.PHONY : controller_manager_msgs_generate_messages_cpp/fast
-
-#=============================================================================
 # Target rules for targets named _run_tests_gazebo_plugins_rostest_test_block_laser_clipping.test
 
 # Build rule for target.
@@ -5732,6 +5667,71 @@ gazebo_ros_diff_drive/fast:
 .PHONY : gazebo_ros_diff_drive/fast
 
 #=============================================================================
+# Target rules for targets named controller_manager_msgs_generate_messages_cpp
+
+# Build rule for target.
+controller_manager_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_cpp
+.PHONY : controller_manager_msgs_generate_messages_cpp
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f gazebo_ros_pkgs/gazebo_ros_control/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build.make gazebo_ros_pkgs/gazebo_ros_control/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build
+.PHONY : controller_manager_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named controller_manager_msgs_generate_messages_eus
+
+# Build rule for target.
+controller_manager_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_eus
+.PHONY : controller_manager_msgs_generate_messages_eus
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_eus/fast:
+	$(MAKE) -f gazebo_ros_pkgs/gazebo_ros_control/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build.make gazebo_ros_pkgs/gazebo_ros_control/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build
+.PHONY : controller_manager_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named controller_manager_msgs_generate_messages_lisp
+
+# Build rule for target.
+controller_manager_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_lisp
+.PHONY : controller_manager_msgs_generate_messages_lisp
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f gazebo_ros_pkgs/gazebo_ros_control/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build.make gazebo_ros_pkgs/gazebo_ros_control/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build
+.PHONY : controller_manager_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named controller_manager_msgs_generate_messages_nodejs
+
+# Build rule for target.
+controller_manager_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_nodejs
+.PHONY : controller_manager_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f gazebo_ros_pkgs/gazebo_ros_control/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build.make gazebo_ros_pkgs/gazebo_ros_control/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build
+.PHONY : controller_manager_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named controller_manager_msgs_generate_messages_py
+
+# Build rule for target.
+controller_manager_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_py
+.PHONY : controller_manager_msgs_generate_messages_py
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_py/fast:
+	$(MAKE) -f gazebo_ros_pkgs/gazebo_ros_control/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build.make gazebo_ros_pkgs/gazebo_ros_control/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build
+.PHONY : controller_manager_msgs_generate_messages_py/fast
+
+#=============================================================================
 # Target rules for targets named default_robot_hw_sim
 
 # Build rule for target.
@@ -6493,11 +6493,6 @@ help:
 	@echo "... run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur30.xml"
 	@echo "... _run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur16e.xml"
 	@echo "... _run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test_ur30.xml"
-	@echo "... controller_manager_msgs_generate_messages_py"
-	@echo "... controller_manager_msgs_generate_messages_nodejs"
-	@echo "... controller_manager_msgs_generate_messages_lisp"
-	@echo "... controller_manager_msgs_generate_messages_eus"
-	@echo "... controller_manager_msgs_generate_messages_cpp"
 	@echo "... _run_tests_gazebo_plugins_rostest_test_block_laser_clipping.test"
 	@echo "... run_tests_gazebo_plugins_rostest_test_range_range_plugin.test"
 	@echo "... clean_test_results_gazebo_plugins"
@@ -6575,6 +6570,11 @@ help:
 	@echo "... gazebo_ros_force"
 	@echo "... gazebo_ros_ft_sensor"
 	@echo "... gazebo_ros_diff_drive"
+	@echo "... controller_manager_msgs_generate_messages_cpp"
+	@echo "... controller_manager_msgs_generate_messages_eus"
+	@echo "... controller_manager_msgs_generate_messages_lisp"
+	@echo "... controller_manager_msgs_generate_messages_nodejs"
+	@echo "... controller_manager_msgs_generate_messages_py"
 	@echo "... default_robot_hw_sim"
 	@echo "... gazebo_ros_control"
 	@echo "... octomap_msgs_generate_messages_py"

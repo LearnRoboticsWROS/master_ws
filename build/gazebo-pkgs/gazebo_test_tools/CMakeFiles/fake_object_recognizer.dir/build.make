@@ -148,7 +148,8 @@ fake_object_recognizer_EXTERNAL_OBJECTS =
 /home/ros/master_ws/devel/lib/libfake_object_recognizer.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
 /home/ros/master_ws/devel/lib/libfake_object_recognizer.so: /usr/lib/x86_64-linux-gnu/libprotobuf.so
 /home/ros/master_ws/devel/lib/libfake_object_recognizer.so: /usr/lib/x86_64-linux-gnu/libsdformat9.so.9.8.0
-/home/ros/master_ws/devel/lib/libfake_object_recognizer.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
+/home/ros/master_ws/devel/lib/libfake_object_recognizer.so: /usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+/home/ros/master_ws/devel/lib/libfake_object_recognizer.so: /usr/lib/x86_64-linux-gnu/libOgrePaging.so
 /home/ros/master_ws/devel/lib/libfake_object_recognizer.so: /usr/lib/x86_64-linux-gnu/libOgreTerrain.so
 /home/ros/master_ws/devel/lib/libfake_object_recognizer.so: /usr/lib/x86_64-linux-gnu/libOgrePaging.so
 /home/ros/master_ws/devel/lib/libfake_object_recognizer.so: /opt/ros/noetic/lib/libroslib.so

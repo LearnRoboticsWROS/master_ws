@@ -35,12 +35,9 @@ cobot:
     joint: link5__link6
     pid: {p: 1, i: 1, d: 0}
 
-  # gripper_controller_right:
-  #   type: effort_controllers/JointPositionController
-  #   joint: finger_right_joint
-  #   pid: {p: 2500, i: 10, d: 10}
+  gripper_controller_right:
+    type: effort_controllers/JointPositionController
+    joint: finger_right_joint
+    pid: {p: 2500, i: 10, d: 10}
 
-  # gripper_controller_left:
-  #   type: effort_controllers/JointPositionController
-  #   joint: finger_left_joint
-  #   pid: {p: 2500, i: 10, d: 10}
+  

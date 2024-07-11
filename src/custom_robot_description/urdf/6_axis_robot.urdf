@@ -86,7 +86,7 @@
         <origin xyz="0.0 0.0 0.02" rpy="0.0 0.0 0.0"/>
     </joint>
 
-    <!-- <xacro:custom_gripper parent="tool0" origin_xyz="0 0 0" /> -->
+    <xacro:custom_gripper parent="tool0" origin_xyz="0 0 0" />
     
 
     <!-- Add transmission to each joint-->
