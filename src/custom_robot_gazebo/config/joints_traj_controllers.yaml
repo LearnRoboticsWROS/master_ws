@@ -1,0 +1,31 @@
+cobot:
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 125
+
+  arm_controller:
+    type: position_controllers/JointTrajectoryController
+    joints:
+      - base_link__link1
+      - link1__link2
+      - link2__link3
+      - link3__link4
+      - link4__link5
+      - link5__link6
+    contraints:
+      goal_time: 0.6
+      stopped_velocity_tolerances: 0.05
+      base_link__link1: {trajectory: 0.1, goal: 0.1}
+      link1__link2: {trajectory: 0.1, goal: 0.1}
+      link2__link3: {trajectory: 0.1, goal: 0.1}
+      link3__link4: {trajectory: 0.1, goal: 0.1}
+      link4__link5: {trajectory: 0.1, goal: 0.1}
+      gripper_joint: {trajectory: 0.1, goal: 0.1}
+    stop_trajectory_duration: 0.5
+    state_publish_rate: 25
+    action_monitor_rate: 10
+
+  gripper_controller_right:
+  type: effort_controllers/JointPositionController
+  joint: finger_right_joint
+  pid: {p: 2500, i: 10, d: 10}
