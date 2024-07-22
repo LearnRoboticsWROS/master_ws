@@ -87,6 +87,7 @@ all: gazebo_ros_pkgs/gazebo_ros_control/all
 all: meshes_robot_description/all
 all: custom_robot_gazebo/all
 all: ur5_description/all
+all: ur5_gazebo_trial/all
 all: universal_robot/ur_kinematics/all
 all: robotiq_description/all
 
@@ -127,6 +128,7 @@ preinstall: gazebo_ros_pkgs/gazebo_ros_control/preinstall
 preinstall: meshes_robot_description/preinstall
 preinstall: custom_robot_gazebo/preinstall
 preinstall: ur5_description/preinstall
+preinstall: ur5_gazebo_trial/preinstall
 preinstall: universal_robot/ur_kinematics/preinstall
 preinstall: robotiq_description/preinstall
 
@@ -172,6 +174,7 @@ clean: gazebo_ros_pkgs/gazebo_ros_control/clean
 clean: meshes_robot_description/clean
 clean: custom_robot_gazebo/clean
 clean: ur5_description/clean
+clean: ur5_gazebo_trial/clean
 clean: universal_robot/ur_kinematics/clean
 clean: robotiq_description/clean
 
@@ -1395,6 +1398,24 @@ ur5_description/preinstall:
 ur5_description/clean:
 
 .PHONY : ur5_description/clean
+
+#=============================================================================
+# Directory level rules for directory ur5_gazebo_trial
+
+# Recursive "all" directory target.
+ur5_gazebo_trial/all:
+
+.PHONY : ur5_gazebo_trial/all
+
+# Recursive "preinstall" directory target.
+ur5_gazebo_trial/preinstall:
+
+.PHONY : ur5_gazebo_trial/preinstall
+
+# Recursive "clean" directory target.
+ur5_gazebo_trial/clean:
+
+.PHONY : ur5_gazebo_trial/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir
