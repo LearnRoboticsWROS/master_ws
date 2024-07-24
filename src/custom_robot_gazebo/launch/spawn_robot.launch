@@ -2,12 +2,12 @@
 <launch>
 
     <!-- Associate to the robot description parameter, the urdf file that model the robot-->
-    <param name="robot_description" command = "$(find xacro)/xacro --inorder $(find custom_robot_description)/urdf/6_axis_robot.urdf" />
+    <param name="robot_description" command = "$(find xacro)/xacro --inorder $(find custom_robot_description)/urdf/6_axis_robot.urdf.xacro" />
 
     <!-- Set teh position in empty world-->
     <arg name="x" default="0" />
     <arg name="y" default="0" />
-    <arg name="z" default="0.8" />
+    <arg name="z" default="0" />
 
     <!-- Associate to the robot description parameter, the urdf file that model the robot-->
     <param name="robot_description_cube" command = "$(find xacro)/xacro --inorder $(find custom_robot_description)/urdf/red_cube.urdf" />

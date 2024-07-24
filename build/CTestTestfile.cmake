@@ -5,6 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("custom_robot_moveit_config")
 subdirs("gazebo_ros_pkgs/gazebo_dev")
 subdirs("gazebo_ros_pkgs/gazebo_ros_pkgs")
 subdirs("universal_robot/universal_robots")
@@ -38,6 +39,6 @@ subdirs("gazebo_ros_pkgs/gazebo_ros_control")
 subdirs("meshes_robot_description")
 subdirs("custom_robot_gazebo")
 subdirs("ur5_description")
-subdirs("ur5_gazebo_trial")
 subdirs("universal_robot/ur_kinematics")
+subdirs("robot_inverse_kinematics")
 subdirs("robotiq_description")
