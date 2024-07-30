@@ -164,6 +164,21 @@ add_executable(test_ik src/test_ik.cpp)
 add_dependencies(test_ik ${cobot_test_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(test_ik ${catkin_LIBRARIES})
 
+add_executable(test_ik_collision_objects src/test_ik_collision_objects.cpp)
+add_dependencies(test_ik_collision_objects ${cobot_test_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(test_ik_collision_objects ${catkin_LIBRARIES})
+
+add_executable(pick_place src/pick_place.cpp)
+add_dependencies(pick_place ${cobot_test_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(pick_place ${catkin_LIBRARIES})
+
+add_executable(pick_place_class src/pick_place_class.cpp)
+add_dependencies(pick_place_class ${cobot_test_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(pick_place_class ${catkin_LIBRARIES})
+
+add_executable(ur5_pick_place_class src/ur5_pick_place_class.cpp)
+add_dependencies(ur5_pick_place_class ${cobot_test_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(ur5_pick_place_class ${catkin_LIBRARIES})
 
 
 #############

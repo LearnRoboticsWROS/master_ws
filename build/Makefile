@@ -6135,6 +6135,32 @@ ur20_moveit_plugin/fast:
 .PHONY : ur20_moveit_plugin/fast
 
 #=============================================================================
+# Target rules for targets named pick_place_class
+
+# Build rule for target.
+pick_place_class: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pick_place_class
+.PHONY : pick_place_class
+
+# fast build rule for target.
+pick_place_class/fast:
+	$(MAKE) -f robot_inverse_kinematics/CMakeFiles/pick_place_class.dir/build.make robot_inverse_kinematics/CMakeFiles/pick_place_class.dir/build
+.PHONY : pick_place_class/fast
+
+#=============================================================================
+# Target rules for targets named test_ik_collision_objects
+
+# Build rule for target.
+test_ik_collision_objects: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_ik_collision_objects
+.PHONY : test_ik_collision_objects
+
+# fast build rule for target.
+test_ik_collision_objects/fast:
+	$(MAKE) -f robot_inverse_kinematics/CMakeFiles/test_ik_collision_objects.dir/build.make robot_inverse_kinematics/CMakeFiles/test_ik_collision_objects.dir/build
+.PHONY : test_ik_collision_objects/fast
+
+#=============================================================================
 # Target rules for targets named moveit_ros_manipulation_gencfg
 
 # Build rule for target.
@@ -6185,6 +6211,19 @@ pcl_msgs_generate_messages_lisp: cmake_check_build_system
 pcl_msgs_generate_messages_lisp/fast:
 	$(MAKE) -f robot_inverse_kinematics/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make robot_inverse_kinematics/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build
 .PHONY : pcl_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named ur5_pick_place_class
+
+# Build rule for target.
+ur5_pick_place_class: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ur5_pick_place_class
+.PHONY : ur5_pick_place_class
+
+# fast build rule for target.
+ur5_pick_place_class/fast:
+	$(MAKE) -f robot_inverse_kinematics/CMakeFiles/ur5_pick_place_class.dir/build.make robot_inverse_kinematics/CMakeFiles/ur5_pick_place_class.dir/build
+.PHONY : ur5_pick_place_class/fast
 
 #=============================================================================
 # Target rules for targets named pcl_msgs_generate_messages_py
@@ -6289,6 +6328,19 @@ topic_tools_generate_messages_lisp: cmake_check_build_system
 topic_tools_generate_messages_lisp/fast:
 	$(MAKE) -f robot_inverse_kinematics/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make robot_inverse_kinematics/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
 .PHONY : topic_tools_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named pick_place
+
+# Build rule for target.
+pick_place: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pick_place
+.PHONY : pick_place
+
+# fast build rule for target.
+pick_place/fast:
+	$(MAKE) -f robot_inverse_kinematics/CMakeFiles/pick_place.dir/build.make robot_inverse_kinematics/CMakeFiles/pick_place.dir/build
+.PHONY : pick_place/fast
 
 #=============================================================================
 # Target rules for targets named test_ik
@@ -6788,10 +6840,13 @@ help:
 	@echo "... ur3e_moveit_plugin"
 	@echo "... ur30_moveit_plugin"
 	@echo "... ur20_moveit_plugin"
+	@echo "... pick_place_class"
+	@echo "... test_ik_collision_objects"
 	@echo "... moveit_ros_manipulation_gencfg"
 	@echo "... pcl_msgs_generate_messages_cpp"
 	@echo "... pcl_msgs_generate_messages_eus"
 	@echo "... pcl_msgs_generate_messages_lisp"
+	@echo "... ur5_pick_place_class"
 	@echo "... pcl_msgs_generate_messages_py"
 	@echo "... pcl_ros_gencfg"
 	@echo "... topic_tools_generate_messages_nodejs"
@@ -6800,6 +6855,7 @@ help:
 	@echo "... nodelet_topic_tools_gencfg"
 	@echo "... topic_tools_generate_messages_eus"
 	@echo "... topic_tools_generate_messages_lisp"
+	@echo "... pick_place"
 	@echo "... test_ik"
 	@echo "... topic_tools_generate_messages_py"
 .PHONY : help

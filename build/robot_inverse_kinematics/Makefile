@@ -56,18 +56,6 @@ CMAKE_BINARY_DIR = /home/ros/master_ws/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -100,6 +88,18 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # Special rule for the target install
 install: preinstall
@@ -168,6 +168,36 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+robot_inverse_kinematics/CMakeFiles/pick_place_class.dir/rule:
+	cd /home/ros/master_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robot_inverse_kinematics/CMakeFiles/pick_place_class.dir/rule
+.PHONY : robot_inverse_kinematics/CMakeFiles/pick_place_class.dir/rule
+
+# Convenience name for target.
+pick_place_class: robot_inverse_kinematics/CMakeFiles/pick_place_class.dir/rule
+
+.PHONY : pick_place_class
+
+# fast build rule for target.
+pick_place_class/fast:
+	cd /home/ros/master_ws/build && $(MAKE) -f robot_inverse_kinematics/CMakeFiles/pick_place_class.dir/build.make robot_inverse_kinematics/CMakeFiles/pick_place_class.dir/build
+.PHONY : pick_place_class/fast
+
+# Convenience name for target.
+robot_inverse_kinematics/CMakeFiles/test_ik_collision_objects.dir/rule:
+	cd /home/ros/master_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robot_inverse_kinematics/CMakeFiles/test_ik_collision_objects.dir/rule
+.PHONY : robot_inverse_kinematics/CMakeFiles/test_ik_collision_objects.dir/rule
+
+# Convenience name for target.
+test_ik_collision_objects: robot_inverse_kinematics/CMakeFiles/test_ik_collision_objects.dir/rule
+
+.PHONY : test_ik_collision_objects
+
+# fast build rule for target.
+test_ik_collision_objects/fast:
+	cd /home/ros/master_ws/build && $(MAKE) -f robot_inverse_kinematics/CMakeFiles/test_ik_collision_objects.dir/build.make robot_inverse_kinematics/CMakeFiles/test_ik_collision_objects.dir/build
+.PHONY : test_ik_collision_objects/fast
+
+# Convenience name for target.
 robot_inverse_kinematics/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule:
 	cd /home/ros/master_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robot_inverse_kinematics/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule
 .PHONY : robot_inverse_kinematics/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule
@@ -226,6 +256,21 @@ pcl_msgs_generate_messages_lisp: robot_inverse_kinematics/CMakeFiles/pcl_msgs_ge
 pcl_msgs_generate_messages_lisp/fast:
 	cd /home/ros/master_ws/build && $(MAKE) -f robot_inverse_kinematics/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make robot_inverse_kinematics/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build
 .PHONY : pcl_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+robot_inverse_kinematics/CMakeFiles/ur5_pick_place_class.dir/rule:
+	cd /home/ros/master_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robot_inverse_kinematics/CMakeFiles/ur5_pick_place_class.dir/rule
+.PHONY : robot_inverse_kinematics/CMakeFiles/ur5_pick_place_class.dir/rule
+
+# Convenience name for target.
+ur5_pick_place_class: robot_inverse_kinematics/CMakeFiles/ur5_pick_place_class.dir/rule
+
+.PHONY : ur5_pick_place_class
+
+# fast build rule for target.
+ur5_pick_place_class/fast:
+	cd /home/ros/master_ws/build && $(MAKE) -f robot_inverse_kinematics/CMakeFiles/ur5_pick_place_class.dir/build.make robot_inverse_kinematics/CMakeFiles/ur5_pick_place_class.dir/build
+.PHONY : ur5_pick_place_class/fast
 
 # Convenience name for target.
 robot_inverse_kinematics/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule:
@@ -348,6 +393,21 @@ topic_tools_generate_messages_lisp/fast:
 .PHONY : topic_tools_generate_messages_lisp/fast
 
 # Convenience name for target.
+robot_inverse_kinematics/CMakeFiles/pick_place.dir/rule:
+	cd /home/ros/master_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robot_inverse_kinematics/CMakeFiles/pick_place.dir/rule
+.PHONY : robot_inverse_kinematics/CMakeFiles/pick_place.dir/rule
+
+# Convenience name for target.
+pick_place: robot_inverse_kinematics/CMakeFiles/pick_place.dir/rule
+
+.PHONY : pick_place
+
+# fast build rule for target.
+pick_place/fast:
+	cd /home/ros/master_ws/build && $(MAKE) -f robot_inverse_kinematics/CMakeFiles/pick_place.dir/build.make robot_inverse_kinematics/CMakeFiles/pick_place.dir/build
+.PHONY : pick_place/fast
+
+# Convenience name for target.
 robot_inverse_kinematics/CMakeFiles/test_ik.dir/rule:
 	cd /home/ros/master_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robot_inverse_kinematics/CMakeFiles/test_ik.dir/rule
 .PHONY : robot_inverse_kinematics/CMakeFiles/test_ik.dir/rule
@@ -377,6 +437,60 @@ topic_tools_generate_messages_py/fast:
 	cd /home/ros/master_ws/build && $(MAKE) -f robot_inverse_kinematics/CMakeFiles/topic_tools_generate_messages_py.dir/build.make robot_inverse_kinematics/CMakeFiles/topic_tools_generate_messages_py.dir/build
 .PHONY : topic_tools_generate_messages_py/fast
 
+src/pick_place.o: src/pick_place.cpp.o
+
+.PHONY : src/pick_place.o
+
+# target to build an object file
+src/pick_place.cpp.o:
+	cd /home/ros/master_ws/build && $(MAKE) -f robot_inverse_kinematics/CMakeFiles/pick_place.dir/build.make robot_inverse_kinematics/CMakeFiles/pick_place.dir/src/pick_place.cpp.o
+.PHONY : src/pick_place.cpp.o
+
+src/pick_place.i: src/pick_place.cpp.i
+
+.PHONY : src/pick_place.i
+
+# target to preprocess a source file
+src/pick_place.cpp.i:
+	cd /home/ros/master_ws/build && $(MAKE) -f robot_inverse_kinematics/CMakeFiles/pick_place.dir/build.make robot_inverse_kinematics/CMakeFiles/pick_place.dir/src/pick_place.cpp.i
+.PHONY : src/pick_place.cpp.i
+
+src/pick_place.s: src/pick_place.cpp.s
+
+.PHONY : src/pick_place.s
+
+# target to generate assembly for a file
+src/pick_place.cpp.s:
+	cd /home/ros/master_ws/build && $(MAKE) -f robot_inverse_kinematics/CMakeFiles/pick_place.dir/build.make robot_inverse_kinematics/CMakeFiles/pick_place.dir/src/pick_place.cpp.s
+.PHONY : src/pick_place.cpp.s
+
+src/pick_place_class.o: src/pick_place_class.cpp.o
+
+.PHONY : src/pick_place_class.o
+
+# target to build an object file
+src/pick_place_class.cpp.o:
+	cd /home/ros/master_ws/build && $(MAKE) -f robot_inverse_kinematics/CMakeFiles/pick_place_class.dir/build.make robot_inverse_kinematics/CMakeFiles/pick_place_class.dir/src/pick_place_class.cpp.o
+.PHONY : src/pick_place_class.cpp.o
+
+src/pick_place_class.i: src/pick_place_class.cpp.i
+
+.PHONY : src/pick_place_class.i
+
+# target to preprocess a source file
+src/pick_place_class.cpp.i:
+	cd /home/ros/master_ws/build && $(MAKE) -f robot_inverse_kinematics/CMakeFiles/pick_place_class.dir/build.make robot_inverse_kinematics/CMakeFiles/pick_place_class.dir/src/pick_place_class.cpp.i
+.PHONY : src/pick_place_class.cpp.i
+
+src/pick_place_class.s: src/pick_place_class.cpp.s
+
+.PHONY : src/pick_place_class.s
+
+# target to generate assembly for a file
+src/pick_place_class.cpp.s:
+	cd /home/ros/master_ws/build && $(MAKE) -f robot_inverse_kinematics/CMakeFiles/pick_place_class.dir/build.make robot_inverse_kinematics/CMakeFiles/pick_place_class.dir/src/pick_place_class.cpp.s
+.PHONY : src/pick_place_class.cpp.s
+
 src/test_ik.o: src/test_ik.cpp.o
 
 .PHONY : src/test_ik.o
@@ -404,21 +518,78 @@ src/test_ik.cpp.s:
 	cd /home/ros/master_ws/build && $(MAKE) -f robot_inverse_kinematics/CMakeFiles/test_ik.dir/build.make robot_inverse_kinematics/CMakeFiles/test_ik.dir/src/test_ik.cpp.s
 .PHONY : src/test_ik.cpp.s
 
+src/test_ik_collision_objects.o: src/test_ik_collision_objects.cpp.o
+
+.PHONY : src/test_ik_collision_objects.o
+
+# target to build an object file
+src/test_ik_collision_objects.cpp.o:
+	cd /home/ros/master_ws/build && $(MAKE) -f robot_inverse_kinematics/CMakeFiles/test_ik_collision_objects.dir/build.make robot_inverse_kinematics/CMakeFiles/test_ik_collision_objects.dir/src/test_ik_collision_objects.cpp.o
+.PHONY : src/test_ik_collision_objects.cpp.o
+
+src/test_ik_collision_objects.i: src/test_ik_collision_objects.cpp.i
+
+.PHONY : src/test_ik_collision_objects.i
+
+# target to preprocess a source file
+src/test_ik_collision_objects.cpp.i:
+	cd /home/ros/master_ws/build && $(MAKE) -f robot_inverse_kinematics/CMakeFiles/test_ik_collision_objects.dir/build.make robot_inverse_kinematics/CMakeFiles/test_ik_collision_objects.dir/src/test_ik_collision_objects.cpp.i
+.PHONY : src/test_ik_collision_objects.cpp.i
+
+src/test_ik_collision_objects.s: src/test_ik_collision_objects.cpp.s
+
+.PHONY : src/test_ik_collision_objects.s
+
+# target to generate assembly for a file
+src/test_ik_collision_objects.cpp.s:
+	cd /home/ros/master_ws/build && $(MAKE) -f robot_inverse_kinematics/CMakeFiles/test_ik_collision_objects.dir/build.make robot_inverse_kinematics/CMakeFiles/test_ik_collision_objects.dir/src/test_ik_collision_objects.cpp.s
+.PHONY : src/test_ik_collision_objects.cpp.s
+
+src/ur5_pick_place_class.o: src/ur5_pick_place_class.cpp.o
+
+.PHONY : src/ur5_pick_place_class.o
+
+# target to build an object file
+src/ur5_pick_place_class.cpp.o:
+	cd /home/ros/master_ws/build && $(MAKE) -f robot_inverse_kinematics/CMakeFiles/ur5_pick_place_class.dir/build.make robot_inverse_kinematics/CMakeFiles/ur5_pick_place_class.dir/src/ur5_pick_place_class.cpp.o
+.PHONY : src/ur5_pick_place_class.cpp.o
+
+src/ur5_pick_place_class.i: src/ur5_pick_place_class.cpp.i
+
+.PHONY : src/ur5_pick_place_class.i
+
+# target to preprocess a source file
+src/ur5_pick_place_class.cpp.i:
+	cd /home/ros/master_ws/build && $(MAKE) -f robot_inverse_kinematics/CMakeFiles/ur5_pick_place_class.dir/build.make robot_inverse_kinematics/CMakeFiles/ur5_pick_place_class.dir/src/ur5_pick_place_class.cpp.i
+.PHONY : src/ur5_pick_place_class.cpp.i
+
+src/ur5_pick_place_class.s: src/ur5_pick_place_class.cpp.s
+
+.PHONY : src/ur5_pick_place_class.s
+
+# target to generate assembly for a file
+src/ur5_pick_place_class.cpp.s:
+	cd /home/ros/master_ws/build && $(MAKE) -f robot_inverse_kinematics/CMakeFiles/ur5_pick_place_class.dir/build.make robot_inverse_kinematics/CMakeFiles/ur5_pick_place_class.dir/src/ur5_pick_place_class.cpp.s
+.PHONY : src/ur5_pick_place_class.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... list_install_components"
 	@echo "... test"
+	@echo "... install/strip"
+	@echo "... pick_place_class"
+	@echo "... test_ik_collision_objects"
 	@echo "... moveit_ros_manipulation_gencfg"
 	@echo "... install"
 	@echo "... pcl_msgs_generate_messages_cpp"
 	@echo "... pcl_msgs_generate_messages_eus"
 	@echo "... pcl_msgs_generate_messages_lisp"
+	@echo "... ur5_pick_place_class"
 	@echo "... pcl_msgs_generate_messages_py"
 	@echo "... pcl_ros_gencfg"
 	@echo "... topic_tools_generate_messages_nodejs"
@@ -429,11 +600,24 @@ help:
 	@echo "... topic_tools_generate_messages_lisp"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... pick_place"
 	@echo "... test_ik"
 	@echo "... topic_tools_generate_messages_py"
+	@echo "... src/pick_place.o"
+	@echo "... src/pick_place.i"
+	@echo "... src/pick_place.s"
+	@echo "... src/pick_place_class.o"
+	@echo "... src/pick_place_class.i"
+	@echo "... src/pick_place_class.s"
 	@echo "... src/test_ik.o"
 	@echo "... src/test_ik.i"
 	@echo "... src/test_ik.s"
+	@echo "... src/test_ik_collision_objects.o"
+	@echo "... src/test_ik_collision_objects.i"
+	@echo "... src/test_ik_collision_objects.s"
+	@echo "... src/ur5_pick_place_class.o"
+	@echo "... src/ur5_pick_place_class.i"
+	@echo "... src/ur5_pick_place_class.s"
 .PHONY : help
 
 
