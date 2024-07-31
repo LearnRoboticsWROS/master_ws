@@ -25,7 +25,7 @@ cobot:
     state_publish_rate: 25
     action_monitor_rate: 10
 
-  gripper_controller_right:
+  gripper_controller:
   type: effort_controllers/JointPositionController
   joint: finger_right_joint
   pid: {p: 2500, i: 10, d: 10}
